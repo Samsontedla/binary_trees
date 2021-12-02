@@ -86,6 +86,9 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	size_t d = binary_tree_depth(get_leaf(tree));
 
+	if (tree == NULL)
+		return (NULL);
+
 	return (is_perfect(tree, d, 0));
 }
 
