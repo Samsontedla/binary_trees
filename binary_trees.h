@@ -61,6 +61,7 @@ bst_t *bst_search(const bst_t *tree, int value);
 bst_t *bst_remove(bst_t *root, int value);
 int tree_height(const binary_tree_t *tree);
 int height(const binary_tree_t *tree);
+size_t heightt(const binary_tree_t *tree);
 int max(int num1, int num2);
 int isValid(binary_tree_t *root);
 void inorder(binary_tree_t *root, binary_tree_t *prev[], int isvalid[]);
@@ -70,4 +71,6 @@ binary_tree_t *deQueue(binary_tree_t **, int *);
 int isQueueEmpty(int *front, int *rear);
 int bs_tree_preorder(bst_t *tree, int n);
 bst_t *minval(bst_t *node);
+int binary_tree_is_avl(const binary_tree_t *tree);
+avl_t *avl_insert(avl_t **tree, int value);
 #endif /* _BINARY_TREES_H */
